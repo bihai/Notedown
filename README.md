@@ -14,4 +14,10 @@ Then run the folder within node-webkit.
 
 ## Screenshots
 
+### Preview Mode
+
+![Screen 2](Screenshots/Screen_002.png)
+
+### Edit Mode
+
 ![Screen 1](Screenshots/Screen_001.png)
