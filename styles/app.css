@@ -1,0 +1,184 @@
+.flex-vertical {
+  display: flex;
+  flex-flow: column;
+}
+.flex-horizontal {
+  display: flex;
+  flex-flow: row;
+}
+.flex {
+  flex: 1;
+}
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background: rgba(60, 60, 60, 0.3);
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #666;
+}
+.component {
+  display: flex;
+  flex-flow: column;
+}
+.component .component-header,
+.component .component-toolbar {
+  display: flex;
+  flex-flow: row;
+  vertical-align: middle;
+}
+.component .component-header h3,
+.component .component-toolbar h3,
+.component .component-header input,
+.component .component-toolbar input {
+  margin: 1em;
+  padding: 0;
+  line-height: 1em;
+  font-size: 120%;
+  font-weight: bold;
+}
+.component .component-header button,
+.component .component-toolbar button {
+  margin: .7em 5px .7em 0px;
+}
+.component .component-toolbar {
+  background: #45687F;
+  color: white;
+}
+.component .component-toolbar input {
+  border: none;
+  background: transparent;
+  color: white;
+}
+.component .component-body {
+  flex: 1;
+  overflow: auto;
+}
+.component .component-body::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background: rgba(60, 60, 60, 0.3);
+}
+.component .component-body::-webkit-scrollbar-thumb {
+  background: #666;
+}
+.component .component-body.padded {
+  padding: 6px;
+}
+.component .component-footer {
+  padding: 6px;
+}
+.component .component-footer .btn {
+  margin-top: 3px;
+}
+body {
+  height: 100%;
+  color: #333;
+  background: white;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  font-size: 9pt;
+  color: #525a65;
+}
+#menu {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  background: url('images/menu-background.png');
+}
+#menu h3 {
+  margin: 6px;
+}
+#content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 200px;
+}
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu li {
+  display: block;
+  cursor: pointer;
+}
+.menu li.important-item {
+  font-weight: bold;
+}
+.menu li.selected {
+  background: white;
+}
+.menu li:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+.menu li a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  padding: 6px;
+}
+button,
+.btn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  color: #ffffff;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+}
+button:hover,
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+button {
+  padding: 5px 10px;
+}
+.btn {
+  display: block;
+}
+.btn div {
+  padding: 5px 10px;
+}
+.btn-add-folder {
+  background: url('images/add-folder.png');
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+}
+.btn-wide {
+  width: 100%;
+}
+.CodeMirror {
+  height: auto;
+  font-family: Monaco, Menlo, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+  font-size: 14px;
+  line-height: 19px;
+  color: #333;
+  background: #fffffe;
+}
+.align-right {
+  text-align: right;
+}
+.mdEdit {
+  margin: 10px;
+}

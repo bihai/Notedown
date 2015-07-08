@@ -1,0 +1,27 @@
+{
+  "name": "app",
+  "version": ".0.01",
+  "description": "",
+  "private": true,
+  "main": "index.html",
+  "window": {
+    "title": "Notedown",
+    "icon": "styles/images/icon.png",
+    "toolbar": false,
+    "width": 1000,
+    "height": 600,
+    "minWidth": 900,
+    "minHeight": 600
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nw ./",
+    "debug": "nw --remote-debugging-port=9222 ./",
+    "build": "nwbuild -p win32 -v 0.12.1 -o ./build ./**/**"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^0.18.3"
+  }
+}

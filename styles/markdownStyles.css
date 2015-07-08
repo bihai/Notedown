@@ -1,0 +1,42 @@
+.mdDocument {
+	font-family: sans-serif;
+	font-size: 11pt;
+	color: black;
+	background: white;
+	margin: 2em;
+}
+
+.mdDocument p {
+	line-height: 1.3em;
+}
+
+.mdDocument h1 {
+	border-bottom: solid 1px #ccc;
+}
+
+.mdDocument table {
+	border-top: solid 1px #ccc;
+	border-left: solid 1px #ccc;
+	border-spacing: 0;
+    border-collapse: separate;
+}
+
+.mdDocument th {
+	background: #f0f0f0;
+	border-right: solid 1px #ccc;
+	border-bottom: solid 1px #ccc;
+	text-align: left;
+	padding: 6px;
+	white-space: nowrap;
+}
+
+.mdDocument td {
+	border-right: solid 1px #ccc;
+	border-bottom: solid 1px #ccc;
+	padding: 6px;
+	vertical-align: top;
+}
+
+.mdDocument pre {
+	background: #f0f0f0;
+}

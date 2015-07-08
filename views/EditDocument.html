@@ -1,0 +1,12 @@
+<div class="component-toolbar">
+	<div>
+		<input type="text" ng-model="controller.document.name" style="width: 400px"></input>
+	</div>
+	<div class="flex align-right">
+		<button ng-click="controller.save()">Save Changes</button>
+		<button ng-click="controller.cancel()">Cancel</button>
+	</div>
+</div>
+<div class="component-body padded">
+	<div class="mdEdit" ng-model="controller.document.content" ui-codemirror ui-codemirror-opts="controller.editorOptions" flex></div>
+</div>

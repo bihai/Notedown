@@ -1,0 +1,35 @@
+@menu-width: 200px;
+@info-width: 150px;
+
+body {
+  height: 100%;
+  color: #333;
+  background: @background-color;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  font-size: 9pt;
+  color: @text-color;
+}
+
+#menu {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: @menu-width;
+	background: url('images/menu-background.png');
+
+	h3 {
+		margin: 6px;
+	}
+}
+
+#content {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: @menu-width;
+}

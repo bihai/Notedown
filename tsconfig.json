@@ -1,0 +1,28 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "ES5",
+		"sourceMap": true,
+		"removeComments": false,
+		"out": "./scripts/app.js"
+	},
+	"files": [
+		"typings/tsd.d.ts",
+		"app/app.ts",
+		"app/models/Folder.ts",
+		"app/models/FolderSettings.ts",
+		"app/models/Document.ts",
+		"app/models/AppSettings.ts",
+		"app/services/FolderService.ts",
+		"app/services/DocumentService.ts",
+		"app/services/WindowService.ts",
+		"app/services/StorageService.ts",
+		"app/controllers/ViewFolderController.ts",
+		"app/controllers/ViewDocumentController.ts",
+		"app/controllers/EditDocumentController.ts",
+		"app/filters/RawHtmlFilter.ts",
+		"app/filters/DocumentPreviewFilter.ts",
+		"app/directives/rightClick.ts",
+		"app/directives/dragDrop.ts"
+	]
+}

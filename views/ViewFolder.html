@@ -1,0 +1,20 @@
+<div id="menu" class="menu component">
+	<div class="component-body" ng-right-click="controller.showGenericContextMenu($event);">
+		<ul>
+			<li class="important-item"><a ng-click="controller.loadFolder(controller.folder.parent.path)">... Parent</a></li>
+
+			<li class="important-item" ng-repeat="folder in controller.folder.folders" ng-right-click="controller.showFolderContextMenu(folder, $event)">
+				<a ng-click="controller.loadFolder(folder.path)">{{ folder.name }}</a>
+			</li>
+			<li ng-repeat="file in controller.folder.files"
+			    ng-right-click="controller.showFileContextMenu(file, $event);"
+				ng-class="{ selected: file.name === controller.selectedFilename }">
+				<a ng-click="controller.openFile(file)">{{ file.name }}</a>
+			</li>
+		</ul>
+	</div>
+	<div class="component-footer">
+		<a class="btn btn-wide" ng-click="controller.newFile()"><div>New Document</div></a>
+	</div>
+</div>
+<div id="content" class="component" ui-view></div>

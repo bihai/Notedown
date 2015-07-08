@@ -1,0 +1,42 @@
+@text-color: rgb(82,90,101);
+@background-color: white;
+@thin-border: solid 1px @text-color;
+
+.gradient(@start : #3498db, @end : #2980b9) {
+	background: @start;
+    background-image: -webkit-linear-gradient(top, @start, @end);
+    background-image: -moz-linear-gradient(top, @start, @end);
+    background-image: -ms-linear-gradient(top, @start, @end);
+    background-image: -o-linear-gradient(top, @start, @end);
+    background-image: linear-gradient(to bottom, @start, @end);
+}
+
+.flex-vertical {
+	display: flex;
+	flex-flow: column;
+}
+
+.flex-horizontal {
+	display: flex;
+	flex-flow: row;
+}
+
+.flex(@amount : 1) {
+	flex: @amount;
+}
+
+.flex {
+	.flex();
+}
+
+.custom-scrollbar {
+	&::-webkit-scrollbar {
+	    width: 10px;
+	    height: 10px;
+	    background: rgba(60,60,60,.3);
+	}
+
+	&::-webkit-scrollbar-thumb {
+	    background: #666;
+	}
+}

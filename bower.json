@@ -1,0 +1,22 @@
+{
+  "name": "App",
+  "version": "0.0.1",
+  "authors": [
+    "Chris Goodall-Dance <chris.dance@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.0",
+    "angular-ui-router": "~0.2.14",
+    "angular-ui-codemirror": "~0.3.0",
+    "showdown": "~0.5.0"
+  }
+}
