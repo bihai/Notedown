@@ -5,12 +5,15 @@ Notedown is a simple AngularJS powered Markdown editor written in Typescript tha
 To get it up an running, clone this repo and run
 
 ```
-npm install
+npm install -g gulp
 
+npm install
 bower install
+
+gulp
 ```
 
-Then run the folder within node-webkit.
+There will be a built version of Notedown in the dist folder for Windows and OSX.
 
 ## Screenshots
 
